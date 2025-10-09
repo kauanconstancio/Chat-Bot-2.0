@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import "./App.css";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
         </p>
       </div>
       <img src="../src/assets/frame 33.png" />
-      <Button className="w-full rounded-full h-13 relative bg-primary-blue text-lg cursor-pointer hover:bg-primary-blue/90">
-        Continue
-        <ArrowRight className="w-5! h-5! absolute right-10" />
-      </Button>
+      <Link to={"/chat"} className="w-full">
+        <Button className="w-full rounded-full h-13 relative bg-primary-blue text-lg cursor-pointer hover:bg-primary-blue/90">
+          Continue
+          <ArrowRight className="w-5! h-5! absolute right-10" />
+        </Button>
+      </Link>
     </div>
   );
 }
