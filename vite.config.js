@@ -11,4 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "/Chat-Bot-2.0",
 });

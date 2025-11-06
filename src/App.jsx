@@ -16,8 +16,8 @@ function App() {
         </p>
       </div>
       <img src="../src/assets/frame 33.png" />
-      <Link to={"/chat"} className="w-full">
-        <Button className="w-full rounded-full h-13 relative bg-primary-blue text-lg cursor-pointer hover:bg-primary-blue/90">
+      <Link to={"/chat"} className="w-full max-w-250">
+        <Button className="w-full rounded-full h-13 relative bg-primary-blue text-lg cursor-pointer hover:bg-primary-blue/90 ">
           Continue
           <ArrowRight className="w-5! h-5! absolute right-10" />
         </Button>
